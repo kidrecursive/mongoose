@@ -48,3 +48,5 @@ docs/tutorials/*.html
 docs/typescript/*.html
 docs/api/*.html
 index.html
+
+venv
