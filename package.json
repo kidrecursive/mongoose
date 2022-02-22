@@ -19,7 +19,9 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@astrajs/client": "^0.3.2",
     "bson": "^4.2.2",
+    "dotenv": "^16.0.0",
     "kareem": "2.3.4",
     "mongodb": "4.3.1",
     "mpath": "0.8.4",
@@ -90,6 +92,7 @@
   "homepage": "https://mongoosejs.com",
   "browser": "./dist/browser.umd.js",
   "mocha": {
+    "timeout": 30000,
     "extension": [
       "test.js"
     ],
