@@ -8,7 +8,7 @@ const BASE_URL = `https://${process.env.ASTRA_DB_ID}-${process.env.ASTRA_DB_REGI
 
 const cartSchema = new mongoose.Schema({
   name: String,
-  products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+  products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }]
 });
 
 const productSchema = new mongoose.Schema({
@@ -38,7 +38,7 @@ describe('astra:', () => {
     });
     await cart.save();
 
-    const res = await Cart.findOne({ name: 'My Cart' })
+    const res = await Cart.findOne({ name: { $eq: 'My Cart' } })
       .populate('products')
       .exec();
 
