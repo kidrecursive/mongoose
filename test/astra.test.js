@@ -44,7 +44,7 @@ describe('astra:', () => {
 
     console.log(res);
 
-    // await mongoose.connection.db.dropCollection('carts');
-    // await mongoose.connection.db.dropCollection('products');
+    await mongoose.connection.db.dropCollection('carts');
+    await mongoose.connection.db.dropCollection('products');
   });
 });
