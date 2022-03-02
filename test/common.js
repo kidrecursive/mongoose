@@ -170,17 +170,17 @@ function dropDBs(done) {
 }
 
 
-before(function(done) {
-  this.timeout(60 * 1000);
-  dropDBs(done);
-});
+// before(function(done) {
+//   this.timeout(60 * 1000);
+//   dropDBs(done);
+// });
 
-after(function(done) {
-  dropDBs(() => {});
+// after(function(done) {
+//   dropDBs(() => {});
 
-  // Give `dropDatabase()` some time to run
-  setTimeout(() => done(), 250);
-});
+//   // Give `dropDatabase()` some time to run
+//   setTimeout(() => done(), 250);
+// });
 
 beforeEach(function() {
   if (this.currentTest) {

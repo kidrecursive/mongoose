@@ -1,3 +1,6 @@
+.env
+venv
+
 lib-cov
 *.swp
 *.sw*
@@ -48,3 +51,5 @@ docs/tutorials/*.html
 docs/typescript/*.html
 docs/api/*.html
 index.html
+
+venv
